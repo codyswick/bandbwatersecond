@@ -103,7 +103,7 @@ section#entertainment {
 footer .footer-cols {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding: 2rem;
   text-align: left;
   font-size: 14px;
@@ -229,6 +229,9 @@ nav a#openup {
 @media screen and (max-width: 580px) {
   .hide-on-small {
     display: none;
+  }
+  .drop-big{
+    height:35px;
   }
 
   #showcase {
