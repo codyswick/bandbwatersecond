@@ -20,6 +20,9 @@ body {
 .drop{
   color:#256d7b;
 }
+.show-on-small{
+  visibility: hidden!important;
+}
 .card img{
 
     position: relative;
@@ -312,6 +315,9 @@ nav a#openup {
 @media screen and (max-width: 580px) {
   .hide-on-small {
     display: none;
+  }
+  .show-on-small{
+    visibility: visible!important;
   }
   .drop-big{
     height:35px;
