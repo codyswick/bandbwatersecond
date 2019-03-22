@@ -77,3 +77,20 @@ $(document).ready(function() {
   })
 
 })
+
+
+
+//photo gallery
+$(function() {
+		var selectedClass = "";
+		$(".fil-cat").click(function(){
+		selectedClass = $(this).attr("data-rel");
+     $("#portfolio-gal").fadeTo(100, 0.1);
+		$("#portfolio-gal div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('scale-anm');
+      $("#portfolio-gal").fadeTo(300, 1);
+    }, 300);
+
+	});
+});
