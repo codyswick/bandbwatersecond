@@ -16,6 +16,8 @@ body {
   margin: 0;
   color: #fff;
   line-height: 1.6;
+
+
 }
 .drop{
   color:#256d7b;
@@ -175,6 +177,45 @@ section#entertainment {
 #showcase h2 {
   font-size: 2rem;
 }
+/* showcase-1*/
+#showcase-1 {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+
+}
+#showcase-1::before{
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: url('../img/gallery1.png') ;
+  background-size: cover;
+  background-repeat:no-repeat;
+  opacity: 0.9;
+  background-position: top;
+  background-color: var(--dark-color);
+}
+
+
+#showcase-1 .container {
+  margin-top: 25vh;
+}
+
+#showcase-1 h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+#showcase-1 h2 {
+  font-size: 2rem;
+}
 
 /* Footer */
 footer .footer-cols {
@@ -317,7 +358,7 @@ nav a#openup {
     display: none;
   }
   .show-on-small{
-    visibility: visible!important;
+    visibility: visible!important
   }
   .drop-big{
     height:35px;
@@ -415,6 +456,13 @@ nav a#openup {
   .gift-cards {
     grid-template-columns: 1fr;
   }
+  #portfolio-gal {
+      margin: 1rem 0;
+      -webkit-column-count: 2!important;
+      -moz-column-count: 2!important;
+      column-count: 2!important;
+
+  }
 
   footer .footer-cols {
     display: none;
@@ -425,4 +473,54 @@ nav a#openup {
   #showcase p.lead {
     display: none;
   }
+}
+
+
+/*img gallery*/
+
+
+
+
+
+#portfolio-gal {
+    margin: 1rem 0;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    -webkit-column-width: 33.33333333333333%;
+    -moz-column-width: 33.33333333333333%;
+    column-width: 33.33333333333333%;
+    max-width: 75vw;;
+    float: none;
+    margin: auto;
+}
+
+
+
+
+.tile{
+  overflow:hidden;
+
+
+}
+.tile img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .8s ease-in-out;
+	transition: .8s ease-in-out;
+}
+.tile img:hover{
+
+
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+  opacity: .6;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
