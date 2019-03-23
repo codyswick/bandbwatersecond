@@ -23,7 +23,7 @@ $(function() {
   $('.open-menu').height($(window).height());
 });
 
-/* Smooth Scrolling
+/* Smooth Scrolling without link highlight
 $('.cf a').on('click', function(event) {
 
   $('.cf a').css({color:'#ccc'});
@@ -46,7 +46,7 @@ $('.cf a').on('click', function(event) {
   }
 });*/
 
-
+// smooth scroll with nav link switch
 
 $(document).ready(function() {
 
