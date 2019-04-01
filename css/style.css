@@ -116,6 +116,14 @@ a {
   color: #ccc;
 }
 
+
+
+
+
+
+
+
+
 /* Section */
 .section {
   padding: 2rem 0;
@@ -147,7 +155,6 @@ section#entertainment {
 #showcase {
   margin: 0;
   padding: 0;
-
   width: 100%;
   height: 100vh;
   position: relative;
@@ -231,7 +238,6 @@ section#entertainment {
 #showcase-2 {
   margin: 0;
   padding: 0;
-
   width: 100%;
   height: 100vh;
   position: relative;
@@ -271,6 +277,49 @@ section#entertainment {
 #shocase-2 p{
   text-shadow: 3px 3px black;
 }
+
+
+/*showcase 3 */
+
+#showcase-3 {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: hidden;
+
+}
+#showcase-3::before{
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: url('../img/solar1.jpg') ;
+  background-size: cover;
+  background-repeat:no-repeat;
+  opacity: 0.4;
+  background-position: top;
+  background-color: var(--light-color);
+}
+
+
+#showcase-3 .container {
+  margin-top: 25vh;
+}
+
+#showcase-3 h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+#showcase-3 h2 {
+  font-size: 2rem;
+}
+
 
 
 /* Footer */
@@ -426,6 +475,32 @@ nav a#openup {
 }
 
 
+
+/*contact form  */
+#mc_embed_signup {
+  background: #256d;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  padding-top: 30px;
+  width: 100%;
+  margin-top: 2vh;
+  box-shadow:0px 0px 20px 1px rgba(0,256,256,0.9)!important;
+}
+
+.main-mail{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.mail-text{
+  color: white;
+  font-size:30px;
+  text-align: left;
+  margin: 25vh 10vh;
+  text-shadow: 1px 3px 20px  rgba(0,256,256,0.9);
+}
+
+
 /*media queries  */
 @media screen and (max-width: 580px) {
   .hide-on-small {
@@ -511,6 +586,24 @@ nav a#openup {
     width: 100%;
     position: relative;
   }
+  .mail-text {
+    font-size: 20px;
+    margin:50% 25px;
+
+
+  }
+
+  #head-mail{
+    font-size:15px!important;
+
+
+  }
+  #mc_embed_signup textarea{
+    width: 60vw;
+    height: 64px;
+
+  }
+
 }
 .cf:before,
 .cf:after {
@@ -540,6 +633,14 @@ nav a#openup {
 
   footer .footer-cols {
     display: none;
+  }
+  .main-mail{
+    grid-template-columns: 1fr;
+
+  }
+  .grid-text{
+    height: 50vh;
+
   }
 }
 
